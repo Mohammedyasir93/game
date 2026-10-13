@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090d">
+  <meta name="description" content="GameZone: discover games, gaming news, and the community leaderboard.">
+  <title>GameZone | Play beyond the ordinary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="GameZone home"><span class="brand-mark">G<span>Z</span></span><span>GAME<span class="brand-light">ZONE</span></span></a>
+    <button class="menu-toggle icon-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#games">Games</a>
+      <a class="nav-link" href="#news">News</a>
+      <a class="nav-link" href="#leaderboard">Leaderboard</a>
+      <a class="nav-link" href="#mini-games">Mini Games</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" type="button" aria-label="Search games" title="Search games"><span class="search-glyph" aria-hidden="true"></span></button>
+      <button class="button button-small button-outline login-trigger" type="button">Log in</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Neon-lit gaming arena"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> YOUR NEXT LEVEL STARTS HERE</p>
+        <h1 id="hero-title">LEVEL UP YOUR<br><span>GAMING EXPERIENCE</span></h1>
+        <p class="hero-copy">Find your next obsession. Catch the stories shaping the scene. Make every match count.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#games">Explore games <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#mini-games"><span class="play-icon" aria-hidden="true">▶</span> Play now</a>
+        </div>
+        <div class="hero-footnote"><span>01 / 04</span><span class="hero-rule"></span><span>DISCOVER YOUR NEXT MAIN</span></div>
+      </div>
+      <div class="hero-side-note" aria-hidden="true">PLAY WITHOUT LIMITS · PLAY WITHOUT LIMITS ·</div>
+    </section>
+
+    <div class="ticker" aria-label="GameZone community updates"><div class="ticker-track"><span>FIND YOUR SQUAD</span><i>✳</i><span>PLAY YOUR WAY</span><i>✳</i><span>STAY IN THE KNOW</span><i>✳</i><span>FIND YOUR SQUAD</span><i>✳</i><span>PLAY YOUR WAY</span><i>✳</i><span>STAY IN THE KNOW</span><i>✳</i></div></div>
+
+    <section class="section games-section" id="games" aria-labelledby="games-title">
+      <div class="section-heading">
+        <div><p class="eyebrow section-kicker">THE COMMUNITY PICKS</p><h2 id="games-title">POPULAR <span>GAMES</span></h2></div>
+        <p class="section-aside">Six worlds. Countless ways to play.<br>What are you queuing into?</p>
+      </div>
+      <div class="game-tools">
+        <div class="filter-list" role="group" aria-label="Filter games by genre">
+          <button class="filter-button selected" type="button" data-filter="all" aria-pressed="true">All games</button>
+          <button class="filter-button" type="button" data-filter="action" aria-pressed="false">Action</button>
+          <button class="filter-button" type="button" data-filter="adventure" aria-pressed="false">Adventure</button>
+          <button class="filter-button" type="button" data-filter="shooter" aria-pressed="false">Shooter</button>
+          <button class="filter-button" type="button" data-filter="sandbox" aria-pressed="false">Sandbox</button>
+        </div>
+        <label class="game-search"><span class="search-glyph" aria-hidden="true"></span><span class="sr-only">Search games</span><input id="game-search" type="search" placeholder="Search games..." autocomplete="off"></label>
+      </div>
+      <p id="game-results" class="result-count" aria-live="polite">Showing 6 games</p>
+      <div class="game-grid" id="game-grid">
+        <article class="game-card" data-title="Valorant" data-genres="action shooter"><div class="game-art art-valorant"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=85" alt="Esports arena bathed in red light" loading="lazy"><span class="game-badge">TACTICAL FPS</span><span class="game-rating"><span aria-hidden="true">★</span> 4.8</span></div><div class="game-info"><div><h3>Valorant</h3><p>Hero Shooter <span>·</span> PC</p></div><button class="details-button" type="button" data-game="Valorant" aria-label="View Valorant details">↗</button></div></article>
+        <article class="game-card" data-title="Minecraft" data-genres="adventure sandbox"><div class="game-art art-minecraft"><img src="https://images.unsplash.com/photo-1607513746994-51f730a44832?auto=format&fit=crop&w=900&q=85" alt="Block-built landscape in a sandbox world" loading="lazy"><span class="game-badge">OPEN WORLD</span><span class="game-rating"><span aria-hidden="true">★</span> 4.9</span></div><div class="game-info"><div><h3>Minecraft</h3><p>Sandbox <span>·</span> All platforms</p></div><button class="details-button" type="button" data-game="Minecraft" aria-label="View Minecraft details">↗</button></div></article>
+        <article class="game-card" data-title="Grand Theft Auto V" data-genres="action adventure"><div class="game-art art-gta"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=85" alt="Neon-lit city street at night" loading="lazy"><span class="game-badge">OPEN WORLD</span><span class="game-rating"><span aria-hidden="true">★</span> 4.7</span></div><div class="game-info"><div><h3>Grand Theft Auto V</h3><p>Action Adventure <span>·</span> Multi</p></div><button class="details-button" type="button" data-game="Grand Theft Auto V" aria-label="View Grand Theft Auto V details">↗</button></div></article>
+        <article class="game-card" data-title="Fortnite" data-genres="action shooter"><div class="game-art art-fortnite"><img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?auto=format&fit=crop&w=900&q=85" alt="Colorful competitive gaming setup" loading="lazy"><span class="game-badge">BATTLE ROYALE</span><span class="game-rating"><span aria-hidden="true">★</span> 4.6</span></div><div class="game-info"><div><h3>Fortnite</h3><p>Battle Royale <span>·</span> Multi</p></div><button class="details-button" type="button" data-game="Fortnite" aria-label="View Fortnite details">↗</button></div></article>
+        <article class="game-card" data-title="PUBG Battlegrounds" data-genres="action shooter"><div class="game-art art-pubg"><img src="https://images.unsplash.com/photo-1542751371-6533f6d4d8a3?auto=format&fit=crop&w=900&q=85" alt="Player competing in a gaming tournament" loading="lazy"><span class="game-badge">BATTLE ROYALE</span><span class="game-rating"><span aria-hidden="true">★</span> 4.5</span></div><div class="game-info"><div><h3>PUBG: Battlegrounds</h3><p>Battle Royale <span>·</span> Multi</p></div><button class="details-button" type="button" data-game="PUBG: Battlegrounds" aria-label="View PUBG: Battlegrounds details">↗</button></div></article>
+        <article class="game-card" data-title="Counter-Strike 2" data-genres="action shooter"><div class="game-art art-counter"><img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=900&q=85" alt="Competitive gaming station with a dark atmosphere" loading="lazy"><span class="game-badge">TACTICAL FPS</span><span class="game-rating"><span aria-hidden="true">★</span> 4.8</span></div><div class="game-info"><div><h3>Counter-Strike 2</h3><p>Competitive FPS <span>·</span> PC</p></div><button class="details-button" type="button" data-game="Counter-Strike 2" aria-label="View Counter-Strike 2 details">↗</button></div></article>
+      </div>
+      <p class="empty-state" id="empty-games" hidden>No games found. Try another title or genre.</p>
+    </section>
+
+    <section class="section news-section" id="news" aria-labelledby="news-title">
+      <div class="section-heading"><div><p class="eyebrow section-kicker">THE LATEST FROM THE LOBBY</p><h2 id="news-title">NEWS &amp; <span>UPDATES</span></h2></div><span class="sample-label">SAMPLE ARTICLES · NOT LIVE NEWS</span></div>
+      <div class="news-grid" id="news-grid">
+        <article class="news-card"><div class="news-image news-image-one"><img src="https://images.unsplash.com/photo-1542751371-6533f6d4d8a3?auto=format&fit=crop&w=1000&q=85" alt="Esports stage ready for a tournament" loading="lazy"><span class="news-category">ESPORTS</span></div><div class="news-copy"><p class="news-date">OCTOBER 08, 2026 <span>·</span> 4 MIN READ</p><h3>Worlds collide: the fall championship heats up</h3><p>Regional champions are set. We break down the rivalries, new contenders, and matchups worth staying up for.</p><button class="text-link news-read" type="button" data-article="Worlds collide: the fall championship heats up">Read more <span aria-hidden="true">↗</span></button></div></article>
+        <article class="news-card"><div class="news-image news-image-two"><img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1000&q=85" alt="Gaming console and controller" loading="lazy"><span class="news-category">GAME UPDATE</span></div><div class="news-copy"><p class="news-date">OCTOBER 03, 2026 <span>·</span> 3 MIN READ</p><h3>Patch notes: a fresh season changes the meta</h3><p>New maps, meaningful balance changes, and a few surprises give squads plenty to learn this season.</p><button class="text-link news-read" type="button" data-article="Patch notes: a fresh season changes the meta">Read more <span aria-hidden="true">↗</span></button></div></article>
+        <article class="news-card"><div class="news-image news-image-three"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1000&q=85" alt="Gaming world illuminated with colorful lights" loading="lazy"><span class="news-category">COMING SOON</span></div><div class="news-copy"><p class="news-date">SEPTEMBER 26, 2026 <span>·</span> 5 MIN READ</p><h3>Five upcoming releases on our radar</h3><p>From long-awaited sequels to inventive indies, these are the worlds we can't wait to step into.</p><button class="text-link news-read" type="button" data-article="Five upcoming releases on our radar">Read more <span aria-hidden="true">↗</span></button></div></article>
+      </div>
+    </section>
+
+    <section class="section leaderboard-section" id="leaderboard" aria-labelledby="leaderboard-title">
+      <div class="leaderboard-layout">
+        <div class="leaderboard-intro"><p class="eyebrow section-kicker">THE ONES TO BEAT</p><h2 id="leaderboard-title">CLIMB THE<br><span>RANKS.</span></h2><p>Every win writes your name into the lobby. Here's who's setting the pace.</p><div class="leaderboard-mark" aria-hidden="true">GZ<span> / TOP 10</span></div></div>
+        <div class="leaderboard-panel"><div class="leaderboard-top"><div><p class="eyebrow">COMMUNITY RANKINGS</p><h3>Player leaderboard</h3></div><div class="rank-tabs" role="tablist" aria-label="Leaderboard period"><button class="rank-tab active" type="button" role="tab" aria-selected="true" data-period="daily">Daily</button><button class="rank-tab" type="button" role="tab" aria-selected="false" data-period="weekly">Weekly</button><button class="rank-tab" type="button" role="tab" aria-selected="false" data-period="alltime">All-time</button></div></div>
+          <div class="table-scroll"><table><thead><tr><th scope="col">RANK</th><th scope="col">PLAYER</th><th scope="col">POINTS</th><th scope="col">WINS</th></tr></thead><tbody id="leaderboard-body"></tbody></table></div>
+          <p class="demo-note">Demo leaderboard. Player scores are sample data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mini-section" id="mini-games" aria-labelledby="mini-title">
+      <div class="mini-background" aria-hidden="true"></div>
+      <div class="mini-content"><p class="eyebrow"><span class="live-dot"></span> QUICK PLAY · NO DOWNLOAD</p><h2 id="mini-title">NEON CLICK<br><span>CHALLENGE</span></h2><p>Thirty seconds. One target. How fast are your reflexes?</p><div class="game-stats"><div><span class="stat-label">SCORE</span><strong id="click-score">00</strong></div><div><span class="stat-label">TIME LEFT</span><strong><span id="click-time">30</span><small>s</small></strong></div><div><span class="stat-label">BEST</span><strong id="click-best">00</strong></div></div><div class="mini-play-area" id="mini-play-area" aria-label="Neon Click Challenge play area"><button class="click-target" id="click-target" type="button" aria-label="Click the target" hidden>+</button><div class="mini-prompt" id="mini-prompt"><span class="target-mark" aria-hidden="true">+</span><span>Ready when you are.</span></div><div class="mini-finish" id="mini-finish" hidden></div></div><div class="mini-controls"><button class="button button-primary" id="start-game" type="button">Start game <span aria-hidden="true">▶</span></button><button class="button button-outline" id="restart-game" type="button" hidden>Play again <span aria-hidden="true">↻</span></button><span class="input-hint">Mouse + touch ready</span></div></div>
+      <div class="mini-side-stamp" aria-hidden="true">TEST YOUR<br>REFLEXES</div>
+    </section>
+
+    <section class="profile-strip" aria-label="Demo player profile"><div class="profile-avatar" aria-hidden="true">NX</div><div class="profile-copy"><span class="eyebrow">PLAYER SPOTLIGHT · DEMO PROFILE</span><strong>NeonX</strong><span>Ready for the next match</span></div><div class="profile-stat"><span>POINTS</span><strong>12,840</strong></div><div class="profile-stat"><span>WINS</span><strong>248</strong></div><button class="text-link profile-login login-trigger" type="button">Join the lobby <span aria-hidden="true">↗</span></button></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><div class="footer-brand-block"><a class="brand" href="#home" aria-label="GameZone home"><span class="brand-mark">G<span>Z</span></span><span>GAME<span class="brand-light">ZONE</span></span></a><p>Your next match, your next story, your next level. It's all here.</p></div><div class="footer-links"><h2>EXPLORE</h2><a href="#games">Games</a><a href="#news">News</a><a href="#leaderboard">Leaderboard</a><a href="#mini-games">Mini games</a></div><div class="footer-links"><h2>STAY CONNECTED</h2><a href="https://discord.com" target="_blank" rel="noreferrer">Discord <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a></div><a class="back-top" href="#home" aria-label="Back to top">↑</a></div>
+    <div class="footer-bottom"><span>© 2026 GAMEZONE. ALL RIGHTS RESERVED.</span><span>BUILT FOR THE LOVE OF THE GAME.</span></div>
+  </footer>
+
+  <dialog class="site-modal" id="auth-modal" aria-labelledby="auth-title"><div class="modal-shell"><button class="modal-close icon-button" type="button" aria-label="Close dialog">×</button><p class="eyebrow section-kicker">WELCOME TO THE LOBBY</p><h2 id="auth-title">PLAYER <span>ACCESS</span></h2><p class="demo-warning">Demo interface only. No account is created, and credentials are never stored or sent.</p><div class="auth-tabs" role="tablist" aria-label="Account mode"><button type="button" class="auth-tab active" role="tab" aria-selected="true" data-auth-mode="login">Log in</button><button type="button" class="auth-tab" role="tab" aria-selected="false" data-auth-mode="register">Register</button></div><form id="auth-form" novalidate><label for="username">Username</label><input id="username" name="username" type="text" minlength="3" maxlength="24" autocomplete="username" required placeholder="Your player name"><label for="password">Password</label><input id="password" name="password" type="password" minlength="8" autocomplete="current-password" required placeholder="At least 8 characters"><p class="form-message" id="form-message" aria-live="polite"></p><button class="button button-primary modal-submit" type="submit"><span id="auth-submit-label">Enter the lobby</span> <span aria-hidden="true">↗</span></button></form><p class="modal-footnote">Front-end demo · Use fictional details only</p></div></dialog>
+  <dialog class="site-modal info-modal" id="info-modal" aria-labelledby="info-title"><div class="modal-shell"><button class="modal-close icon-button" type="button" aria-label="Close dialog">×</button><p class="eyebrow section-kicker" id="info-kicker">GAMEZONE SPOTLIGHT</p><h2 id="info-title">Title</h2><p class="info-description" id="info-description"></p><button class="button button-outline info-close" type="button">Back to GameZone</button></div></dialog>
+</body>
+</html>
